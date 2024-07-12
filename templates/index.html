@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <<title>SOLAR POWER PREDICTION</title>
+</head>
+
+
+<body>
+<div class="login">
+    <div class="banner">
+        <h1>SOLAR POWER PREDICTION</h1>
+    </div>
+    <form action="{{ url_for('predict')}}" method="post">
+        <h1>SVM</h1>
+        <br><br>
+        <label for="year">year</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="year" placeholder="year" required="required" />
+        <br><br>
+        <label for="month">month</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="month" placeholder="month" required="required" />
+        <br><br>
+        <label for="date">date</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="date" placeholder="date" required="required" />
+        <br><br>
+        <label for="time">time</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="time" placeholder="time" required="required" />
+        <br><br>
+        <label for="temperature">temperature</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="temperature" placeholder="temperature" required="required" />
+        <br><br>
+        <label for="relativehumidity">relativehumidity</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="relativehumidity" placeholder="relativehumidity_2m (%)" required="required" />
+        <br><br>
+        <label for="direct_radiation">direct_radiation</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="direct_radiation" placeholder="direct_radiation (W/m)" required="required" />
+        <br><br>
+        <label for="diffuse_radiation">diffuse_radiation</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="diffuse_radiation" placeholder="diffuse_radiation (W/m)" required="required" />
+        <br><br>
+        <label for="direct_normal_irradiance">direct_normal_irradiance</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="direct_normal_irradiance" placeholder="direct_normal_irradiance (W/m)" required="required" />
+        <br><br>
+        <label for="windspeed">windspeed</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="windspeed" placeholder="windspeed_10m (km/h)" required="required" />
+        <br><br>
+
+        <p style="text-align:center;"><input type="submit", value = "Submit" style="height:30px; width:70px"></p>
+        <br><br>
+
+
+ 
+        <!-- <p style="text-align:center;"><input type="submit", value = "L Submit" style="height:30px; width:70px"></p> -->
+    </form>
+
+    <br>
+    <br><br>
+</div>
+
+</body>
+
+</html>
+
+<style type="text/css">
+
+.login {
+height: 920px;
+  width: 600px;
+  border: 1px solid green ;
+  background-color: #E9ECE9;
+  opacity: 0.75;
+  padding: 20px 50px;
+}
+         body {
+                  width: 100vw;
+                  height: 100vh;
+                  display: flex;
+                  overflow: hidden;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  font-family: sans-serif;
+                  font-size: 16px;
+                  background-image: url(https://atlantickeyenergy.com/wp-content/uploads/2019/08/solar-energy-florida.jpg);
+                  background-position: center; /* Center the image */
+                  background-repeat: no-repeat; /* Do not repeat the image */
+                  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+  </style>
